@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="pl" data-bs-theme="auto">
 <head>
-  <script type="text/javascript" data-cmp-ab="1" src="https://cdn.consentmanager.net/delivery/autoblocking/a613fb5832a4d.js" data-cmp-host="b.delivery.consentmanager.net" data-cmp-cdn="cdn.consentmanager.net" data-cmp-codesrc="0"></script>
+  
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
   <title>Valselo - firmowe laptopy, bez szukania, prosty wybór, niskie ceny.</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
@@ -11,7 +11,7 @@
 	<meta name="keywords" content="Valselo, laptopy, Windows 11 Pro, SMB, firma, sprzęt IT, nowoczesny design, MŚP, komputery dla firm, obsługa dla firm, Microsoft 365, Intune">
 	<meta name="author" content="valselo.com">
 	<meta http-equiv="Content-Language" content="pl">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
 	
   <style>
     body {
@@ -51,7 +51,49 @@
 	}
 
 
-	<!--.max-width-1200 {
+/* HERO */
+.hero-bg {
+  background-color: #ecf1f8; /* jasne tło */
+}
+
+.hero-text {
+color: #212529; /* ciemny tekst dla jasnego tła */
+}
+
+
+
+
+[data-bs-theme="dark"] .hero-bg {
+  /* background-color: #01011d !important; */
+
+ /* background-image: linear-gradient(180deg, #08081B 0%, rgba(8, 8, 27, 0.00) 50%, #08081B 100%);
+  background-color: #08081B;
+  color: #f8f9fa; */
+
+
+  background-image: linear-gradient(135deg, #13206c, #198754);
+  background-color: #0a0f2c;
+  color: #f8f9fa;
+
+
+
+
+}
+
+[data-bs-theme="dark"] .hero-text {
+  color: #f8f9fa !important;
+}
+
+[data-bs-theme="light"] .hero-bg {
+  background-color: #f8f9fa !important;
+}
+
+[data-bs-theme="light"] .hero-text {
+  color: #212529 !important;
+}
+
+
+	<!-- .max-width-1200 {
 		max-width: 1200px;
 
   max-width: 1200px;
@@ -101,45 +143,85 @@
   font-size: clamp(2rem, 5vw, 4rem);
 }
 
+  .responsive-parallax {
+    background-image: url('dell1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (min-width: 768px) {
+    .responsive-parallax {
+      background-attachment: fixed;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .responsive-parallax {
+      background-attachment: scroll;
+    }
+  }
+
+
+.extra-small {
+  font-size: 0.65rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.custom-border-hover {
+  background-color: transparent;
+}
+
+.custom-border-hover:hover {
+  background-color: transparent !important;
+  border-color: #6c757d;
+  color: #343a40;
+}
 
 </style>
 
 </head>
 <body >
 
-<header class="fixed-top bg-white border-bottom text-center py-2" style="z-index: 1030;>
-  <button class="btn btn-outline-primary menu-toggle" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">Menu</button>
+<header class="fixed-top bg-white border-bottom text-center py-2" style="z-index: 1030;">
+  <button class="btn btn-outline-primary btn-sm btn-fixed-width" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">Menu</button>
 </header>
 
 <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
   <div class="offcanvas-header">
     <h5 class="offcanvas-title">valselo.com</h5>
-    <button type="button" class="btn btn-outline-primary" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">Menu</button>
+    <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">Menu</button>
   </div>
   <div class="offcanvas-body">
     <ul class="nav flex-column">
-      <li class="nav-item"><a class="nav-link" href="#hero">Start</a></li>
-      <li class="nav-item"><a class="nav-link" href="#valselo">Valselo</a></li>
+      <li class="nav-item"><a class="btn custom-border-hover btn-sm mb-2" style="min-width: 100px; max-width: 150px;" href="#hero">Start</a></li>
+      <li class="nav-item"><a class="btn custom-border-hover btn-sm mb-2" style="min-width: 100px; max-width: 150px;" href="#valselo">Valselo</a></li>
 	<hr>
-      <li class="nav-item"><a class="nav-link" href="#dobry">Dobry</a></li>
-      <li class="nav-item"><a class="nav-link" href="#lepszy">Lepszy</a></li>
-      <li class="nav-item"><a class="nav-link" href="#najlepszy">Najlepszy</a></li>
+      <li class="nav-item"><a class="btn btn-outline-primary btn-sm mb-2" style="min-width: 100px; max-width: 150px;" href="#dobry">Dobry</a></li>
+      <li class="nav-item"><a class="btn btn-outline-success btn-sm mb-2" style="min-width: 100px; max-width: 150px;" href="#lepszy">Lepszy</a></li>
+      <li class="nav-item"><a class="btn btn-outline-primary btn-sm mb-2" style="min-width: 100px; max-width: 150px;" href="#najlepszy">Najlepszy</a></li>
 	<hr>
-      <li class="nav-item"><a class="nav-link" href="#wydajnosc">Wysoka wydajność</a></li>
-      <li class="nav-item"><a class="nav-link" href="#premium">Premium</a></li>
-      <li class="nav-item"><a class="nav-link" href="#apple">Apple</a></li>
-      <li class="nav-item"><a class="nav-link" href="#surface">Microsoft Surface</a></li>
+      <li class="nav-item"><a class="btn custom-border-hover btn-sm mb-2" style="min-width: 100px; max-width: 150px;" href="#wydajnosc">Wydajność</a></li>
+      <li class="nav-item"><a class="btn custom-border-hover btn-sm mb-2" style="min-width: 100px; max-width: 150px;" href="#premium">Premium</a></li>
+      <li class="nav-item"><a class="btn custom-border-hover btn-sm mb-2" style="min-width: 100px; max-width: 150px;" href="#apple">Apple</a></li>
+      <li class="nav-item"><a class="btn custom-border-hover btn-sm mb-2" style="min-width: 100px; max-width: 150px;" href="#surface">Surface</a></li>
 	<hr>
-      <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
+      <li class="nav-item"><a class="btn btn-primary btn-sm mb-2" style="min-width: 100px; max-width: 150px;" href="#kontakt">Kontakt</a></li>
     </ul>
     <hr>
-    <button id="themeToggle" class="btn btn-secondary">Przełącz motyw</button>
+    <button id="themeToggle" class="btn custom-border-hover btn-sm mb-2" style="min-width: 100px; max-width: 150px;">Motyw</button>
   </div>
 </div>
 
-<section id="hero" class="vh-100 d-flex flex-column justify-content-center align-items-center bg-light">
+<section id="hero" class="vh-100 d-flex flex-column justify-content-center align-items-center hero-bg">
+  <div class="hero-text" style="margin-left: 5%; margin-right: 5%;">
   <h1>Firmowe laptopy. Bez szukania.</h1>
   <p>Prosty wybór. Niskie ceny. Finansowanie.</p>
+  </div>
   <a href="#valselo" class="btn btn-primary">Zobacz propozycje</a>
 </section>
 
@@ -149,24 +231,22 @@
 <p>
   Nie trać czasu na przeszukiwanie sklepów. Valselo.com pokazuje tylko dostępne laptopy biznesowe. Starannie wybrane w trzech prostych kategoriach:
   <i class="bi bi-check-square"></i> dobry,
-  <i class="bi bi-check-square"></i> lepszy,
+  <i class="bi bi-check-square text-success"></i> lepszy,
   <i class="bi bi-check-square"></i> najlepszy.<p>
   Wybierasz, finansujesz i zamawiasz online. <p>
   Szybko i bez chaosu.
 </p>
 
-<!--  <!-- Wyśrodkowane zdjęcie
+<!-- Wyśrodkowane zdjęcie
   <div class="text-center my-4 container-xl">
-
 <img src="dell1.jpg">
-
 <img src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/page/landing-page/ai-pc-education/dell-ai-pc-hero.png?fmt=png-alpha&wid=2800&hei=1000" alt="Laptop Dobry" class="img-fluid" style="max-width: 1000px;"> -->
 
 </section>
 
 
 
-<section class="parallax-section">
+<section class="parallax-section responsive-parallax">
   <div class="parallax-overlay">
     <div class="parallax-content text-center text-white">
       <h2 class="fs-1 my-5">Wybierz laptopy dla swojej firmy.</h2>
@@ -176,8 +256,6 @@
 </section>
 
 
-
-
 <!--
 1 karta: użyj col-md-6 lub col-md-12 (środek)
 2 karty: użyj col-md-6 (po 6 kolumn każda)
@@ -185,13 +263,14 @@
 -->
 
 
-<section id="dobry" class="section max-width-1200">
+<section id="dobry" class="section section section-text max-width-1200">
+  <div class="mx-auto" style="max-width: 900px;">
   <h2>Dobry</h2>
   <p>Wystarczający do pracy biurowej i wideokonferencji. Spełnia wszystkie standardy Windows 11 Pro.</p>
 
   <!-- <a class="btn btn-secondary">do 2 500 PLN</a> -->
-  <span class="badge bg-secondary fs-5 px-3 py-2.5 mt-4">>2 500 PLN netto</span>
-
+  <span class="badge bg-primary fs-5 px-3 py-2.5 mt-4 rounded-0">do 2 500 PLN netto</span>
+  </div>
  
 <div class="row justify-content-center max-width-1200 mt-4">
 
@@ -235,8 +314,8 @@
           <li>Full HD</li>
           <li>Gwarancja 3 lata</li>
         </ul>
-        <a href="#" class="btn btn-outline-primary btn-fixed-width">Więcej</a>
-        <a href="#" class="btn btn-outline-success btn-fixed-width">Kup</a>
+        <a href="#" class="btn btn-outline-primary btn-sm btn-fixed-width">Więcej</a>
+        <a href="#" class="btn btn-outline-success btn-sm btn-fixed-width">Kup</a>
       </div>
     </div>
 
@@ -246,9 +325,11 @@
 </section>
 
 <section id="lepszy" class="section max-width-1200">
+  <div class="mx-auto" style="max-width: 900px;">
   <h2>Lepszy</h2>
-  <p>Najlepszy wybór do firmy. Idealny balans między możliwościami i ceną.</p>
-  <span class="badge bg-secondary fs-5 px-3 py-2.5 mt-4">>4 500 PLN netto</span>
+  <p>Pragmatyczny wybór do firmy. Idealny balans między możliwościami i ceną.</p>
+  <span class="badge bg-success fs-5 px-3 py-2.5 mt-4 rounded-0">do 4 500 PLN netto</span>
+  </div>
   <div class="row justify-content-center mt-4">
 
     <div class="card product-card col-md-3">
@@ -261,8 +342,8 @@
           <li>Full HD</li>
           <li>Gwarancja 3 lata</li>
         </ul>
-        <a href="#" class="btn btn-outline-primary btn-fixed-width">Więcej</a>
-        <a href="#" class="btn btn-outline-success btn-fixed-width">Kup</a>
+        <a href="#" class="btn btn-outline-primary btn-sm btn-fixed-width">Więcej</a>
+        <a href="#" class="btn btn-outline-success btn-sm btn-fixed-width">Kup</a>
       </div>
     </div>
 
@@ -276,8 +357,8 @@
           <li>Full HD</li>
           <li>Gwarancja 3 lata</li>
         </ul>
-        <a href="#" class="btn btn-outline-primary btn-fixed-width">Więcej</a>
-        <a href="#" class="btn btn-outline-success btn-fixed-width">Kup</a>
+        <a href="#" class="btn btn-outline-primary btn-sm btn-fixed-width">Więcej</a>
+        <a href="#" class="btn btn-outline-success btn-sm btn-fixed-width">Kup</a>
       </div>
     </div>
 
@@ -291,8 +372,8 @@
           <li>Full HD</li>
           <li>Gwarancja 3 lata</li>
         </ul>
-        <a href="#" class="btn btn-outline-primary btn-fixed-width">Więcej</a>
-        <a href="#" class="btn btn-outline-success btn-fixed-width">Kup</a>
+        <a href="#" class="btn btn-outline-primary btn-sm btn-fixed-width">Więcej</a>
+        <a href="#" class="btn btn-outline-success btn-sm btn-fixed-width">Kup</a>
       </div>
     </div>
 
@@ -302,9 +383,11 @@
 </section>
 
 <section id="najlepszy" class="section max-width-1200">
+  <div class="mx-auto" style="max-width: 900px;">
   <h2>Najlepszy</h2>
   <p>Mocniejsze parametry dla wymagających użytkowników.</p>
-  <span class="badge bg-secondary fs-5 px-3 py-2.5 mt-4">>5 500 PLN netto</span>
+  <span class="badge bg-primary fs-5 px-3 py-2.5 mt-4 rounded-0">do 5 500 PLN netto</span>
+  </div>
   <div class="row justify-content-center mt-4">
 
     <div class="card product-card col-md-3">
@@ -317,8 +400,8 @@
           <li>Full HD</li>
           <li>Gwarancja 3 lata</li>
         </ul>
-        <a href="#" class="btn btn-outline-primary btn-fixed-width">Więcej</a>
-        <a href="#" class="btn btn-outline-success btn-fixed-width">Kup</a>
+        <a href="#" class="btn btn-outline-primary btn-sm btn-fixed-width">Więcej</a>
+        <a href="#" class="btn btn-outline-success btn-sm btn-fixed-width">Kup</a>
       </div>
     </div>
 
@@ -332,8 +415,8 @@
           <li>Full HD</li>
           <li>Gwarancja 3 lata</li>
         </ul>
-        <a href="#" class="btn btn-outline-primary btn-fixed-width">Więcej</a>
-        <a href="#" class="btn btn-outline-success btn-fixed-width">Kup</a>
+        <a href="#" class="btn btn-outline-primary btn-sm btn-fixed-width">Więcej</a>
+        <a href="#" class="btn btn-outline-success btn-sm btn-fixed-width">Kup</a>
       </div>
     </div>
 
@@ -347,8 +430,8 @@
           <li>Full HD</li>
           <li>Gwarancja 3 lata</li>
         </ul>
-        <a href="#" class="btn btn-outline-primary btn-fixed-width">Więcej</a>
-        <a href="#" class="btn btn-outline-success btn-fixed-width">Kup</a>
+        <a href="#" class="btn btn-outline-primary btn-sm btn-fixed-width">Więcej</a>
+        <a href="#" class="btn btn-outline-success btn-sm btn-fixed-width">Kup</a>
       </div>
     </div>
 
@@ -359,9 +442,11 @@
 
 
 <section id="wydajnosc" class="section max-width-1200">
+  <div class="mx-auto" style="max-width: 900px;">
   <h2>Wysoka wydajność</h2>
-  <p>Laptopy do zadań specjalnych. To biurowa stacja robocza. Do pracy z wieloma monitorami, wysoką rozdzielczością i ciężkimi Excelami.</p>
-  <span class="badge bg-secondary fs-5 px-3 py-2.5 mt-4">>8 500 PLN netto</span>
+  <p>Laptopy do zadań specjalnych. Do pracy z wieloma monitorami, wysoką rozdzielczością i ciężkimi Excelami.</p>
+  <span class="badge bg-primary fs-5 px-3 py-2.5 mt-4 rounded-0">do 8 500 PLN netto</span>
+  </div>
   <div class="row justify-content-center mt-4">
 
     <div class="card product-card col-md-3">
@@ -375,8 +460,8 @@
           <li>RAM 32GB</li>
           <li>Thunderbolt4 x2</li>
         </ul>
-        <a target="_blank" href="https://www.dell.com/pl-pl/shop/notebooki-firmy-dell/notebook-dell-pro-max-14/spd/dell-pro-max-mc14255-laptop" class="btn btn-outline-primary btn-fixed-width">Więcej</a>
-        <a htarget="_blank" ref="#" class="btn btn-outline-success btn-fixed-width">Kup</a>
+        <a target="_blank" href="https://www.dell.com/pl-pl/shop/notebooki-firmy-dell/notebook-dell-pro-max-14/spd/dell-pro-max-mc14255-laptop" class="btn btn-outline-primary btn-sm btn-fixed-width">Więcej</a>
+        <a htarget="_blank" ref="#" class="btn btn-outline-success btn-sm btn-fixed-width">Kup</a>
       </div>
     </div>
 
@@ -391,8 +476,8 @@
           <li>Pamięć 32GB</li>
           <li>Thunderbolt4 x2</li>
         </ul>
-        <a target="_blank" href="https://www.dell.com/pl-pl/shop/notebooki-firmy-dell/notebook-dell-pro-max-16/spd/dell-pro-max-mc16255-laptop" class="btn btn-outline-primary btn-fixed-width">Więcej</a>
-        <a target="_blank" href="#" class="btn btn-outline-success btn-fixed-width">Kup</a>
+        <a target="_blank" href="https://www.dell.com/pl-pl/shop/notebooki-firmy-dell/notebook-dell-pro-max-16/spd/dell-pro-max-mc16255-laptop" class="btn btn-outline-primary btn-sm btn-fixed-width">Więcej</a>
+        <a target="_blank" href="#" class="btn btn-outline-success btn-sm btn-fixed-width">Kup</a>
       </div>
     </div>
 
@@ -406,8 +491,8 @@
           <li>Full HD</li>
           <li>Gwarancja 3 lata</li>
         </ul>
-        <a target="_blank" href="#" class="btn btn-outline-primary btn-fixed-width">Więcej</a>
-        <a target="_blank" href="#" class="btn btn-outline-success btn-fixed-width">Kup</a>
+        <a target="_blank" href="#" class="btn btn-outline-primary btn-sm btn-fixed-width">Więcej</a>
+        <a target="_blank" href="#" class="btn btn-outline-success btn-sm btn-fixed-width">Kup</a>
       </div>
     </div>
 
@@ -418,9 +503,11 @@
 
 
 <section id="premium" class="section max-width-1200">
+  <div class="mx-auto" style="max-width: 900px;">
   <h2>Premium</h2>
   <p>Lekki, atrakcyjny i prestiżowy. Zupełnie niestandardowy.</p>
-  <span class="badge bg-secondary fs-5 px-3 py-2.5 mt-4">>10 000 PLN netto</span>
+  <span class="badge bg-primary fs-5 px-3 py-2.5 mt-4 rounded-0">do 10 000 PLN netto</span>
+  </div>
   <div class="row justify-content-center mt-4">
 
     <div class="card product-card col-md-3">
@@ -433,8 +520,8 @@
           <li>Full HD</li>
           <li>Gwarancja 3 lata</li>
         </ul>
-        <a href="#" class="btn btn-outline-primary btn-fixed-width">Więcej</a>
-        <a href="#" class="btn btn-outline-success btn-fixed-width">Kup</a>
+        <a href="#" class="btn btn-outline-primary btn-sm btn-fixed-width">Więcej</a>
+        <a href="#" class="btn btn-outline-success btn-sm btn-fixed-width">Kup</a>
       </div>
     </div>
 
@@ -448,8 +535,8 @@
           <li>Full HD</li>
           <li>Gwarancja 3 lata</li>
         </ul>
-        <a href="#" class="btn btn-outline-primary btn-fixed-width">Więcej</a>
-        <a href="#" class="btn btn-outline-success btn-fixed-width">Kup</a>
+        <a href="#" class="btn btn-outline-primary btn-sm btn-fixed-width">Więcej</a>
+        <a href="#" class="btn btn-outline-success btn-sm btn-fixed-width">Kup</a>
       </div>
     </div>
 
@@ -463,8 +550,8 @@
           <li>Full HD</li>
           <li>Gwarancja 3 lata</li>
         </ul>
-        <a href="#" class="btn btn-outline-primary btn-fixed-width">Więcej</a>
-        <a href="#" class="btn btn-outline-success btn-fixed-width">Kup</a>
+        <a href="#" class="btn btn-outline-primary btn-sm btn-fixed-width">Więcej</a>
+        <a href="#" class="btn btn-outline-success btn-sm btn-fixed-width">Kup</a>
       </div> -->
     </div>
 
@@ -475,9 +562,11 @@
 
 
 <section id="apple" class="section max-width-1200">
+  <div class="mx-auto" style="max-width: 900px;">
   <h2>Apple</h2>
   <p>MacBook Air i MaBook Pro może sprawdzić się w firmie.</p>
-  <span class="badge bg-secondary fs-5 px-3 py-2.5 mt-4">>10 000 PLN netto</span>
+  <span class="badge bg-primary fs-5 px-3 py-2.5 mt-4 rounded-0">do 10 000 PLN netto</span>
+  </div>
   <div class="row justify-content-center mt-4">
 
     <div class="card product-card col-md-3">
@@ -490,8 +579,8 @@
           <li>Full HD</li>
           <li>Gwarancja 3 lata</li>
         </ul>
-        <a href="#" class="btn btn-outline-primary btn-fixed-width">Więcej</a>
-        <a href="#" class="btn btn-outline-success btn-fixed-width">Kup</a>
+        <a href="#" class="btn btn-outline-primary btn-sm btn-fixed-width">Więcej</a>
+        <a href="#" class="btn btn-outline-success btn-sm btn-fixed-width">Kup</a>
       </div>
     </div>
 
@@ -505,8 +594,8 @@
           <li>Full HD</li>
           <li>Gwarancja 3 lata</li>
         </ul>
-        <a href="#" class="btn btn-outline-primary btn-fixed-width">Więcej</a>
-        <a href="#" class="btn btn-outline-success btn-fixed-width">Kup</a>
+        <a href="#" class="btn btn-outline-primary btn-sm btn-fixed-width">Więcej</a>
+        <a href="#" class="btn btn-outline-success btn-sm btn-fixed-width">Kup</a>
       </div>
     </div>
 
@@ -520,8 +609,8 @@
           <li>Full HD</li>
           <li>Gwarancja 3 lata</li>
         </ul>
-        <a href="#" class="btn btn-outline-primary btn-fixed-width">Więcej</a>
-        <a href="#" class="btn btn-outline-success btn-fixed-width">Kup</a>
+        <a href="#" class="btn btn-outline-primary btn-sm btn-fixed-width">Więcej</a>
+        <a href="#" class="btn btn-outline-success btn-sm btn-fixed-width">Kup</a>
       </div>
     </div>
 
@@ -531,10 +620,13 @@
 </section>
 
 
-<section id="surface" class="section max-width-1200">
+<section id="surface" class="section max-width-1200 section-text">
+  <div class="mx-auto" style="max-width: 900px;">
   <h2>Surface</h2>
-  <p>Microsoft Surface to kategoria referencyjna. Tworzy unikalne doświadczenia pracy na sprzęcie pochodzącym od producenta systemu Windows.<p>Urządzenia 2-in-1, praca z piórem cyfrowym, praca z pionowym ekranem.</p>
-  <span class="badge bg-secondary fs-5 px-3 py-2.5 mt-4">>10 000 PLN netto</span>
+  <p>Microsoft Surface to kategoria referencyjna. Tworzy unikalne doświadczenia pracy na sprzęcie pochodzącym od producenta Windows.</p>
+  <p>Urządzenia 2-in-1, praca z piórem cyfrowym lub pionowym ekranem.</p>
+  <span class="badge bg-primary fs-5 px-3 py-2.5 mt-4 rounded-0">do 10 000 PLN netto</span>
+  </div>
   <div class="row justify-content-center mt-4">
 
     <div class="card product-card col-md-3">
@@ -547,8 +639,8 @@
           <li>Full HD</li>
           <li>Gwarancja 3 lata</li>
         </ul>
-        <a href="#" class="btn btn-outline-primary btn-fixed-width">Więcej</a>
-        <a href="#" class="btn btn-outline-success btn-fixed-width">Kup</a>
+        <a href="#" class="btn btn-outline-primary btn-sm btn-fixed-width">Więcej</a>
+        <a href="#" class="btn btn-outline-success btn-sm btn-fixed-width">Kup</a>
       </div>
     </div>
 
@@ -562,8 +654,8 @@
           <li>Full HD</li>
           <li>Gwarancja 3 lata</li>
         </ul>
-        <a href="#" class="btn btn-outline-primary btn-fixed-width">Więcej</a>
-        <a href="#" class="btn btn-outline-success btn-fixed-width">Kup</a>
+        <a href="#" class="btn btn-outline-primary btn-sm btn-fixed-width">Więcej</a>
+        <a href="#" class="btn btn-outline-success btn-sm btn-fixed-width">Kup</a>
       </div>
     </div>
 
@@ -577,8 +669,8 @@
           <li>Full HD</li>
           <li>Gwarancja 3 lata</li>
         </ul>
-        <a href="#" class="btn btn-outline-primary btn-fixed-width">Więcej</a>
-        <a href="#" class="btn btn-outline-success btn-fixed-width">Kup</a>
+        <a href="#" class="btn btn-outline-primary btn-sm btn-fixed-width">Więcej</a>
+        <a href="#" class="btn btn-outline-success btn-sm btn-fixed-width">Kup</a>
       </div>
     </div> -->
 
@@ -589,24 +681,24 @@
 
 
 
-<section id="kontakt" class="section bg-light text-dark">
-  <h2>Chcesz dostęp do cen valselo.com?</h2>
-  <p>Wypełnij formularz, a skontaktujemy się z Tobą.</p>
+<section id="kontakt" class="section">
+  <h2>Zainteresowany?</h2>
+  <p>Wypełnij formularz, a skontaktujemy się z Tobą. Otrzymasz dostęp do cen i sklepu online dla firm.</p>
 
-  <div class="mx-auto" style="max-width: 500px;">
-    <form action="https://formspree.io/f/your-form-id" method="POST">
+  <div class="mx-auto" style="max-width: 300px;">
+    <form action="https://formspree.io/f/mvgvgavz" method="POST">
         <label for="name" class="form-label">Imię i nazwisko</label>
-        <input type="text" class="form-control" id="name" name="name" required>
+        <input type="text " class="form-control text-center" id="name" name="name" required>
       </div>
 
       <div class="mx-auto" style="max-width: 300px;>
-        <label for="email" class="form-label">Adres e-mail</label>
-        <input type="email" class="form-control" id="email" name="_replyto" required>
+        <label for="email class="form-label">Adres e-mail</label>
+        <input type="email" class="form-control text-center" id="email" name="_replyto" required>
       </div>
 
       <div class="mx-auto" style="max-width: 300px;>
-        <label for="company" class="form-label">NIP</label>
-        <input type="text" class="form-control" id="company" name="company">
+        <label for="company class="form-label">NIP</label>
+        <input type="text" class="form-control text-center" id="company" name="company">
       </div>
 
       <button type="submit" class="btn btn-primary">Wyślij</button>
@@ -616,16 +708,12 @@
 
 
 <footer class="section bg-dark text-white">
-  <p>Masz pytania? <p>Napisz do nas: kontakt@valselo.com</p>
-	valselo.com to marka firmy<p>
-	<strong>RedFlag Sebastian Pawłowski</strong><br>
-        ul. Olbrachta 112<br>
-        01-373 Warszawa<br>
-        NIP: 8741189733<br>
-	<a href="https://redflag.tech">www.redflag.tech</a>
-      </div><br>
-	<a href="rodo.html">Polityka prywatności</a><p>	
-
+  <p>Masz pytania? Napisz do nas:</p>
+  <a class="btn btn-outline-secondary btn-sm mb-2" style="min-width: 150px;" href="mailto:kontakt@valselo.com">kontakt</a><p></p>
+	valselo.com to marka firmy <strong class="py-2">RedFlag.tech</strong><br>
+                	<a class="btn btn-outline-secondary btn-sm btn-fixed-width mt-2 mb-2" style="min-width: 150px;" href="https://redflag.tech" target="_blank">redflag.tech</a>
+  	      <a class="btn btn-outline-secondary btn-sm btn-fixed-width mt-2 mb-2" style="min-width: 150px;" href="https://redflag.tech/rodo" target="_blank">Polityka prywatności</a>
+</div>
 <div style="flex: 1; min-width: 200px;">
 <span class="tag">© <span id="y"></span> valselo.com. Wszystkie prawa zastrzeżone.</span>
 </footer>
@@ -641,7 +729,7 @@
 </script>
 
 <script>
-  document.querySelectorAll('.offcanvas a.nav-link').forEach(link => {
+  document.querySelectorAll('.offcanvas a').forEach(link => {
     link.addEventListener('click', function () {
       const offcanvasElement = document.getElementById('mobileMenu');
       const offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvasElement);
@@ -650,10 +738,14 @@
       }
     });
   });
+</script>
 
-
+<script>
 document.getElementById('y').textContent = new Date().getFullYear();
+</script>
 
+<script
+type="text/javascript" data-cmp-ab="1" src="https://cdn.consentmanager.net/delivery/autoblocking/a613fb5832a4d.js" data-cmp-host="b.delivery.consentmanager.net" data-cmp-cdn="cdn.consentmanager.net" data-cmp-codesrc="0">
 </script>
 
 </body>
